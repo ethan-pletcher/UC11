@@ -1,5 +1,4 @@
 //THESE FUNCTIONS CONTAIN BUGS!!!!!
-
 /**
  * Returns a array of odd numbers from an array
  * @param {Array} a An array of numbers
@@ -14,7 +13,6 @@ function oddFilter(a) {
     }
     return result;
 }
-
 /**
  * Returns an array of the first n triangular numbers
  * @param {number} n The number of triangular numbers to be returned
@@ -32,7 +30,6 @@ function listTriangularNumbers(n) {
     }
     return array;
 }
-
 /**
  * Creates an HTML times table
  * @param {number} row The row number
@@ -53,20 +50,18 @@ function multTable(row, col) {
     table = table + "</table>";
     return table;
 }
-
 /**
  * Returns n!
  * @param {number} n
  * @returns {number}
  */
 function factorial(n) {
-    var result = 0;
-    for (var i = n; i > 1; i--) {
-        result = result * i;
+    var result = n;
+    for (var i = (n - 1); i > 1; i--) {
+        result *= i;
     }
     return result;
 }
-
 /**
  * Returns combinations nCk
  * @param {number} n The number to choose from
@@ -78,7 +73,6 @@ function combinations(n, k) {
     c = factorial(n) / factorial(k) * (factorial(n - k));
     return c;
 }
-
 /**
  * Arranges an array from least to greatest
  * @param {Array} a An array to sort
