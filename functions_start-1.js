@@ -6,7 +6,7 @@
  */
 function oddFilter(a) {
           var result = [];
-          for (i = 0; i < a.length - 1; ++i) {
+          for (i = 0; i < a.length; ++i) {
                     if (a[i] % 2 != 0) {
                               result.push(a[i]);
                     }
@@ -23,7 +23,7 @@ function listTriangularNumbers(n) {
           var array = [];
           for (i = 1; i <= n; ++i) {
                     num = i;
-                    for (j = i; j >= 1; --j) {
+                    for (j = i - 1; j >= 1; --j) {
                               num = num + j;
                     }
                     array.push(num);
@@ -39,9 +39,9 @@ function listTriangularNumbers(n) {
 function multTable(row, col) {
           var table = "<table>";
           var x;
-          for (var i = 1; i < col; ++i) {
+          for (var i = 1; i <= row; ++i) {
                     table = table + "<tr>";
-                    for (var j = 1; j < row; ++j) {
+                    for (var j = 1; j <= col; ++j) {
                               x = i * j;
                               table = table + "<td>" + x + "</td>";
                     }
